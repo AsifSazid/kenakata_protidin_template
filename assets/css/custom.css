@@ -1,0 +1,13 @@
+.footer-cus-nav{
+    list-style: none; 
+    padding-left: 0%;
+}
+
+.footer-cus-nav .cus-nav-item a{
+    color: #f0f0f0;
+}
+.footer-cus-nav .cus-nav-item a:hover{
+    color: #fff;
+    font-weight: 700;
+}
+

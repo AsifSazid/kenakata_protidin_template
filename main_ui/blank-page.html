@@ -1,973 +1,1191 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
-	<!-- Global stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
-		type="text/css">
-	<link href="../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/layout.min.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/components.min.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/colors.min.css" rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
+		<!-- Global stylesheets -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+			rel="stylesheet"
+			type="text/css">
+		<link href="../global_assets/css/icons/icomoon/styles.min.css"
+			rel="stylesheet" type="text/css">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/bootstrap_limitless.min.css" rel="stylesheet"
+			type="text/css">
+		<link href="../assets/css/layout.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/components.min.css" rel="stylesheet"
+			type="text/css">
+		<link href="../assets/css/colors.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+		<!-- /global stylesheets -->
 
-	<!-- Core JS files -->
-	<script src="../global_assets/js/main/jquery.min.js"></script>
-	<script src="../global_assets/js/main/bootstrap.bundle.min.js"></script>
-	<script src="../global_assets/js/plugins/loaders/blockui.min.js"></script>
-	<script src="../global_assets/js/plugins/ui/slinky.min.js"></script>
-	<script src="../global_assets/js/plugins/ui/ripple.min.js"></script>
-	<!-- /core JS files -->
+		<!-- Core JS files -->
+		<script src="../global_assets/js/main/jquery.min.js"></script>
+		<script src="../global_assets/js/main/bootstrap.bundle.min.js"></script>
+		<script src="../global_assets/js/plugins/loaders/blockui.min.js"></script>
+		<script src="../global_assets/js/plugins/ui/slinky.min.js"></script>
+		<script src="../global_assets/js/plugins/ui/ripple.min.js"></script>
+		<!-- /core JS files -->
 
-	<!-- Theme JS files -->
-	<script src="../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script src="../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script src="../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script src="../global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+		<!-- Theme JS files -->
+		<script src="../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+		<script
+			src="../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+		<script
+			src="../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+		<script src="../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+		<script src="../global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
-	<script src="../assets/js/app.js"></script>
-	<script src="../global_assets/js/demo_pages/dashboard.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
-	<script src="../global_assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
-	<!-- /theme JS files -->
+		<script src="../assets/js/app.js"></script>
+		<script src="../global_assets/js/demo_pages/dashboard.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+		<script
+			src="../global_assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+		<!-- /theme JS files -->
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-dark bg-indigo py-2">
-		<div class="navbar-brand wmin-0 mr-5">
-			<a href="index.html" class="d-inline-block">
-				<img src="../global_assets/images/logo_light.png" alt="">
-			</a>
-		</div>
-
-		<div class="d-md-none">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-				<i class="icon-tree5"></i>
-			</button>
-		</div>
-
-		<div class="collapse navbar-collapse" id="navbar-mobile">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<form action="#">
-						<div class="form-group form-group-feedback form-group-feedback-right">
-							<input type="search" class="form-control text-white border-bottom-1 wmin-md-200"
-								placeholder="Search">
-							<div class="form-control-feedback text-white">
-								<i class="icon-search4 font-size-sm"></i>
-							</div>
-						</div>
-					</form>
-				</li>
-			</ul>
-
-			<span class="ml-md-3 mr-md-auto"> </span>
-
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown dropdown-user">
-					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
-						data-toggle="dropdown">
-						<img src="../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2"
-							height="34" alt="">
-						<span>Victoria</span>
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
-						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span
-								class="badge badge-pill bg-blue ml-auto">58</span></a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
-						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
-					</div>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
-						<i class="icon-envelop2"></i>
-						<span class="d-md-none ml-2">Notifications</span>
-						<span class="badge textorange-400 ml-auto ml-md-0">16</span>
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
-						<div class="dropdown-content-header">
-							<span class="font-weight-semibold">Latest activity</span>
-							<a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
-						</div>
-
-						<div class="dropdown-content-body dropdown-scrollable">
-							<ul class="media-list">
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-success-400 rounded-round btn-icon"><i
-												class="icon-mention"></i></a>
-									</div>
-
-									<div class="media-body">
-										<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and
-										tricks"
-										<div class="font-size-sm text-muted mt-1">4 minutes ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i
-												class="icon-paperplane"></i></a>
-									</div>
-
-									<div class="media-body">
-										Special offers have been sent to subscribed users by <a href="#">Donna
-											Gordon</a>
-										<div class="font-size-sm text-muted mt-1">36 minutes ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-blue rounded-round btn-icon"><i
-												class="icon-plus3"></i></a>
-									</div>
-
-									<div class="media-body">
-										<a href="#">Chris Arney</a> created a new <span
-											class="font-weight-semibold">Design</span> branch in <span
-											class="font-weight-semibold">Limitless</span> repository
-										<div class="font-size-sm text-muted mt-1">2 hours ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i
-												class="icon-truck"></i></a>
-									</div>
-
-									<div class="media-body">
-										Shipping cost to the Netherlands has been reduced, database updated
-										<div class="font-size-sm text-muted mt-1">Feb 8, 11:30</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i
-												class="icon-comment"></i></a>
-									</div>
-
-									<div class="media-body">
-										New review received on <a href="#">Server side integration</a> services
-										<div class="font-size-sm text-muted mt-1">Feb 2, 10:20</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i
-												class="icon-spinner11"></i></a>
-									</div>
-
-									<div class="media-body">
-										<strong>January, 2018</strong> - 1320 new users, 3284 orders, $49,390 revenue
-										<div class="font-size-sm text-muted mt-1">Feb 1, 05:46</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<div class="dropdown-content-footer bg-light">
-							<a href="#" class="text-grey mr-auto">All activity</a>
-							<div>
-								<a href="#" class="text-grey" data-popup="tooltip" title="Clear list"><i
-										class="icon-checkmark3"></i></a>
-								<a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i
-										class="icon-gear"></i></a>
-							</div>
-						</div>
-					</div>
-				</li>
-				
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
-						<i class="icon-cart5"></i>
-						<span class="d-md-none ml-2">My Carts</span>
-						<span class="badge textorange-400 ml-auto ml-md-0">16</span>
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
-						<div class="dropdown-content-header">
-							<span class="font-weight-semibold">Latest activity</span>
-							<a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
-						</div>
-
-						<div class="dropdown-content-body dropdown-scrollable">
-							<ul class="media-list">
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-success-400 rounded-round btn-icon"><i
-												class="icon-mention"></i></a>
-									</div>
-
-									<div class="media-body">
-										<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and
-										tricks"
-										<div class="font-size-sm text-muted mt-1">4 minutes ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i
-												class="icon-paperplane"></i></a>
-									</div>
-
-									<div class="media-body">
-										Special offers have been sent to subscribed users by <a href="#">Donna
-											Gordon</a>
-										<div class="font-size-sm text-muted mt-1">36 minutes ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-blue rounded-round btn-icon"><i
-												class="icon-plus3"></i></a>
-									</div>
-
-									<div class="media-body">
-										<a href="#">Chris Arney</a> created a new <span
-											class="font-weight-semibold">Design</span> branch in <span
-											class="font-weight-semibold">Limitless</span> repository
-										<div class="font-size-sm text-muted mt-1">2 hours ago</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i
-												class="icon-truck"></i></a>
-									</div>
-
-									<div class="media-body">
-										Shipping cost to the Netherlands has been reduced, database updated
-										<div class="font-size-sm text-muted mt-1">Feb 8, 11:30</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i
-												class="icon-comment"></i></a>
-									</div>
-
-									<div class="media-body">
-										New review received on <a href="#">Server side integration</a> services
-										<div class="font-size-sm text-muted mt-1">Feb 2, 10:20</div>
-									</div>
-								</li>
-
-								<li class="media">
-									<div class="mr-3">
-										<a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i
-												class="icon-spinner11"></i></a>
-									</div>
-
-									<div class="media-body">
-										<strong>January, 2018</strong> - 1320 new users, 3284 orders, $49,390 revenue
-										<div class="font-size-sm text-muted mt-1">Feb 1, 05:46</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<div class="dropdown-content-footer bg-light">
-							<a href="#" class="text-grey mr-auto">All activity</a>
-							<div>
-								<a href="#" class="text-grey" data-popup="tooltip" title="Clear list"><i
-										class="icon-checkmark3"></i></a>
-								<a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i
-										class="icon-gear"></i></a>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<img src="../global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item english"><img src="../global_assets/images/lang/gb.png"
-								class="img-flag" alt=""> English</a>
-						<a href="#" class="dropdown-item ukrainian"><img src="../global_assets/images/lang/ua.png"
-								class="img-flag" alt=""> Українська</a>
-						<a href="#" class="dropdown-item deutsch"><img src="../global_assets/images/lang/de.png"
-								class="img-flag" alt=""> Deutsch</a>
-						<a href="#" class="dropdown-item espana"><img src="../global_assets/images/lang/es.png"
-								class="img-flag" alt=""> España</a>
-						<a href="#" class="dropdown-item russian"><img src="../global_assets/images/lang/ru.png"
-								class="img-flag" alt=""> Русский</a>
-					</div>
-				</li>
-				
-			</ul>
-		</div>
-	</div>
-	<!-- /main navbar -->
-
-
-	<!-- Secondary navbar -->
-	<div class="navbar navbar-expand-md navbar-dark bg-indigo">
-		<div class="text-center d-md-none w-100">
-			<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
-				data-target="#navbar-navigation">
-				<!-- <i class="icon-unfold mr-2"></i> -->
-				Main Menu
-			</button>
-		</div>
-
-		<div class="navbar-collapse collapse" id="navbar-navigation">
-			<ul class="navbar-nav navbar-nav-highlight">
-				<li class="nav-item">
-					<a href="index.html" class="navbar-nav-link active">
-						<!-- <i class="icon-home4 mr-2"></i> -->
-						Home
-					</a>
-				</li>
-
-				<li class="nav-item nav-item-levels mega-menu-full">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<!-- <i class="icon-make-group mr-2"></i> -->
-						Products
-					</a>
-
-					<div class="dropdown-menu dropdown-content">
-						<div class="dropdown-content-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
-										Category 1</div>
-									<div class="dropdown-divider mb-2"></div>
-									<div class="dropdown-item-group mb-3 mb-md-0">
-										<ul class="list-unstyled">
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-copy"></i>
-													Layouts</a>
-												<ul class="list-unstyled">
-													<li><a href="../../../../layout_1/LTR/material/full/index.html"
-															class="dropdown-item rounded">Default layout</a></li>
-													<li><a href="../../../../layout_2/LTR/material/full/index.html"
-															class="dropdown-item rounded">Layout 2</a></li>
-													<li><a href="../../../../layout_3/LTR/material/full/index.html"
-															class="dropdown-item rounded">Layout 3</a></li>
-													<li><a href="index.html" class="dropdown-item active rounded">Layout
-															4</a></li>
-													<li><a href="../../../../layout_5/LTR/material/full/index.html"
-															class="dropdown-item rounded">Layout 5</a></li>
-													<li>
-														<a href="../../../../layout_6/LTR/material/full/index.html"
-															class="dropdown-item disabled rounded">
-															Layout 6
-															<span
-																class="badge bg-transparent align-self-center ml-auto">Coming
-																soon</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i
-														class="icon-color-sampler"></i> Themes</a>
-												<ul class="list-unstyled">
-													<li><a href="../../../LTR/default/full/index.html"
-															class="dropdown-item rounded">Default</a></li>
-													<li><a href="index.html"
-															class="dropdown-item active rounded">Material</a></li>
-													<li><a href="../../../LTR/dark/full/index.html"
-															class="dropdown-item rounded">Dark</a></li>
-													<li>
-														<a href="../../../LTR/clean/full/index.html"
-															class="dropdown-item disabled rounded">
-															Clean
-															<span
-																class="badge bg-transparent align-self-center ml-auto">Coming
-																soon</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="../../../RTL/material/full/index.html"
-													class="dropdown-item rounded">
-													<i class="icon-width"></i>
-													RTL version
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
-										Category 2</div>
-									<div class="dropdown-divider mb-2"></div>
-									<div class="dropdown-item-group mb-3 mb-md-0">
-										<ul class="list-unstyled">
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-stack2"></i>
-													Page layouts</a>
-												<ul class="list-unstyled">
-													<li><a href="layout_navbar_fixed_main.html"
-															class="dropdown-item rounded">Fixed main navbar</a></li>
-													<li><a href="layout_navbar_sticky_secondary.html"
-															class="dropdown-item rounded">Sticky secondary navbar</a>
-													</li>
-													<li><a href="layout_navbar_hideable_main.html"
-															class="dropdown-item rounded">Hideable main navbar</a></li>
-													<li><a href="layout_navbar_hideable_secondary.html"
-															class="dropdown-item rounded">Hideable secondary navbar</a>
-													</li>
-													<li><a href="layout_footer_fixed.html"
-															class="dropdown-item rounded">Fixed footer</a></li>
-													<li><a href="layout_footer_hideable.html"
-															class="dropdown-item rounded">Hideable footer</a></li>
-													<li><a href="layout_without_header.html"
-															class="dropdown-item rounded">Without page header</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i
-														class="icon-page-break2"></i> Headers &amp; footers</a>
-												<ul class="list-unstyled">
-													<li><a href="content_page_header.html"
-															class="dropdown-item rounded">Page header</a></li>
-													<li>
-														<a href="content_page_footer.html"
-															class="dropdown-item rounded disabled">
-															Page footer
-															<span
-																class="badge bg-transparent align-self-center ml-auto">Coming
-																soon</span>
-														</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-cube3"></i>
-													Boxed layout</a>
-												<ul class="list-unstyled">
-													<li><a href="layout_boxed_default.html"
-															class="dropdown-item rounded">Boxed with default sidebar</a>
-													</li>
-													<li><a href="layout_boxed_mini.html"
-															class="dropdown-item rounded">Boxed with mini sidebar</a>
-													</li>
-													<li><a href="layout_boxed_full.html"
-															class="dropdown-item rounded">Boxed full width</a></li>
-													<li><a href="layout_boxed_content.html"
-															class="dropdown-item rounded">Boxed content</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
-										Category 3</div>
-									<div class="dropdown-divider mb-2"></div>
-									<div class="dropdown-item-group mb-3 mb-md-0">
-										<ul class="list-unstyled">
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-menu3"></i>
-													Navbars</a>
-												<ul class="list-unstyled">
-													<li>
-														<a href="#" class="dropdown-item rounded">Single navbar</a>
-														<ul class="list-unstyled">
-															<li><a href="navbar_single_top_static.html"
-																	class="dropdown-item rounded">Single top static</a>
-															</li>
-															<li><a href="navbar_single_top_fixed.html"
-																	class="dropdown-item rounded">Single top fixed</a>
-															</li>
-															<li><a href="navbar_single_bottom_static.html"
-																	class="dropdown-item rounded">Single bottom
-																	static</a></li>
-															<li><a href="navbar_single_bottom_fixed.html"
-																	class="dropdown-item rounded">Single bottom
-																	fixed</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="#" class="dropdown-item rounded">Multiple navbars</a>
-														<ul class="list-unstyled">
-															<li><a href="navbar_multiple_top_static.html"
-																	class="dropdown-item rounded">Multiple top
-																	static</a></li>
-															<li><a href="navbar_multiple_top_fixed.html"
-																	class="dropdown-item rounded">Multiple top fixed</a>
-															</li>
-															<li><a href="navbar_multiple_bottom_static.html"
-																	class="dropdown-item rounded">Multiple bottom
-																	static</a></li>
-															<li><a href="navbar_multiple_bottom_fixed.html"
-																	class="dropdown-item rounded">Multiple bottom
-																	fixed</a></li>
-															<li><a href="navbar_multiple_top_bottom.html"
-																	class="dropdown-item rounded">Multiple - top and
-																	bottom</a></li>
-															<li><a href="navbar_multiple_secondary_sticky.html"
-																	class="dropdown-item rounded">Multiple - secondary
-																	sticky</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="#" class="dropdown-item rounded">Content navbar</a>
-														<ul class="list-unstyled">
-															<li><a href="navbar_component_single.html"
-																	class="dropdown-item rounded">Single navbar</a></li>
-															<li><a href="navbar_component_multiple.html"
-																	class="dropdown-item rounded">Multiple navbars</a>
-															</li>
-														</ul>
-													</li>
-													<li class="dropdown-divider"></li>
-													<li><a href="navbar_colors.html" class="dropdown-item rounded">Color
-															options</a></li>
-													<li><a href="navbar_sizes.html" class="dropdown-item rounded">Sizing
-															options</a></li>
-													<li><a href="navbar_hideable.html"
-															class="dropdown-item rounded">Hide on scroll</a></li>
-													<li><a href="navbar_components.html"
-															class="dropdown-item rounded">Navbar components</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i
-														class="icon-transmission"></i> Horizontal navigation</a>
-												<ul class="list-unstyled">
-													<li><a href="navigation_horizontal_click.html"
-															class="dropdown-item rounded">Submenu on click</a></li>
-													<li><a href="navigation_horizontal_hover.html"
-															class="dropdown-item rounded">Submenu on hover</a></li>
-													<li><a href="navigation_horizontal_elements.html"
-															class="dropdown-item rounded">With custom elements</a></li>
-													<li><a href="navigation_horizontal_tabs.html"
-															class="dropdown-item rounded">Tabbed navigation</a></li>
-													<li><a href="navigation_horizontal_disabled.html"
-															class="dropdown-item rounded">Disabled navigation links</a>
-													</li>
-													<li><a href="navigation_horizontal_mega.html"
-															class="dropdown-item rounded">Horizontal mega menu</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-tree5"></i>
-													Menu levels</a>
-												<ul class="list-unstyled">
-													<li><a href="#" class="dropdown-item rounded"><i
-																class="icon-IE"></i> Second level</a></li>
-													<li>
-														<a href="#" class="dropdown-item rounded"><i
-																class="icon-firefox"></i> Second level with child</a>
-														<ul class="list-unstyled">
-															<li><a href="#" class="dropdown-item rounded"><i
-																		class="icon-android"></i> Third level</a></li>
-															<li>
-																<a href="#" class="dropdown-item rounded"><i
-																		class="icon-apple2"></i> Third level with
-																	child</a>
-																<ul class="list-unstyled">
-																	<li><a href="#" class="dropdown-item rounded"><i
-																				class="icon-html5"></i> Fourth level</a>
-																	</li>
-																	<li><a href="#" class="dropdown-item rounded"><i
-																				class="icon-css3"></i> Fourth level</a>
-																	</li>
-																</ul>
-															</li>
-															<li><a href="#" class="dropdown-item rounded"><i
-																		class="icon-windows"></i> Third level</a></li>
-														</ul>
-													</li>
-													<li><a href="#" class="dropdown-item rounded"><i
-																class="icon-chrome"></i> Second level</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
-										Category 4</div>
-									<div class="dropdown-divider mb-2"></div>
-									<div class="dropdown-item-group mb-3 mb-md-0">
-										<ul class="list-unstyled">
-											<li>
-												<a href="#" class="dropdown-item rounded"><i
-														class="icon-indent-decrease2"></i> Sidebars</a>
-												<ul class="list-unstyled">
-													<li>
-														<a href="#" class="dropdown-item rounded">Main sidebar</a>
-														<ul class="list-unstyled">
-															<li><a href="sidebar_default_collapse.html"
-																	class="dropdown-item rounded">Default
-																	collapsible</a></li>
-															<li><a href="sidebar_default_hide.html"
-																	class="dropdown-item rounded">Default hideable</a>
-															</li>
-															<li><a href="sidebar_default_hidden.html"
-																	class="dropdown-item rounded">Default hidden</a>
-															</li>
-															<li><a href="sidebar_mini_collapse.html"
-																	class="dropdown-item rounded">Mini collapsible</a>
-															</li>
-															<li><a href="sidebar_mini_hide.html"
-																	class="dropdown-item rounded">Mini hideable</a></li>
-															<li><a href="sidebar_mini_hidden.html"
-																	class="dropdown-item rounded">Mini hidden</a></li>
-															<li class="dropdown-divider"></li>
-															<li><a href="sidebar_default_sections.html"
-																	class="dropdown-item rounded">Sectioned sidebar</a>
-															</li>
-															<li><a href="sidebar_default_stretched.html"
-																	class="dropdown-item rounded">Stretched sidebar</a>
-															</li>
-															<li><a href="sidebar_default_color_dark.html"
-																	class="dropdown-item rounded">Dark color</a></li>
-															<li><a href="sidebar_default_color_custom.html"
-																	class="dropdown-item rounded">Custom color</a></li>
-															<li><a href="sidebar_default_color_sections_custom.html"
-																	class="dropdown-item rounded">Custom sections
-																	color</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="#" class="dropdown-item rounded">Secondary sidebar</a>
-														<ul class="list-unstyled">
-															<li><a href="sidebar_secondary_after.html"
-																	class="dropdown-item rounded">After default</a></li>
-															<li><a href="sidebar_secondary_before.html"
-																	class="dropdown-item rounded">Before default</a>
-															</li>
-															<li><a href="sidebar_secondary_hidden.html"
-																	class="dropdown-item rounded">Hidden by default</a>
-															</li>
-															<li class="dropdown-divider"></li>
-															<li><a href="sidebar_secondary_sections.html"
-																	class="dropdown-item rounded">Sectioned sidebar</a>
-															</li>
-															<li><a href="sidebar_secondary_stretched.html"
-																	class="dropdown-item rounded">Stretched sidebar</a>
-															</li>
-															<li><a href="sidebar_secondary_color_dark.html"
-																	class="dropdown-item rounded">Dark color</a></li>
-															<li><a href="sidebar_secondary_color_custom.html"
-																	class="dropdown-item rounded">Custom color</a></li>
-															<li><a href="sidebar_secondary_color_sections_custom.html"
-																	class="dropdown-item rounded">Custom sections
-																	color</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="#" class="dropdown-item rounded">Right sidebar</a>
-														<ul class="list-unstyled">
-															<li><a href="sidebar_right_default_collapse.html"
-																	class="dropdown-item rounded">Show - collapse
-																	main</a></li>
-															<li><a href="sidebar_right_default_hide.html"
-																	class="dropdown-item rounded">Show - hide main</a>
-															</li>
-															<li><a href="sidebar_right_default_toggle.html"
-																	class="dropdown-item rounded">Show - fix default
-																	width</a></li>
-															<li><a href="sidebar_right_mini_toggle.html"
-																	class="dropdown-item rounded">Show - fix mini
-																	width</a></li>
-															<li><a href="sidebar_right_secondary_hide.html"
-																	class="dropdown-item rounded">Show - hide
-																	secondary</a></li>
-															<li><a href="sidebar_right_visible.html"
-																	class="dropdown-item rounded">Visible by default</a>
-															</li>
-															<li class="dropdown-divider"></li>
-															<li><a href="sidebar_right_sections.html"
-																	class="dropdown-item rounded">Sectioned sidebar</a>
-															</li>
-															<li><a href="sidebar_right_stretched.html"
-																	class="dropdown-item rounded">Stretched sidebar</a>
-															</li>
-															<li><a href="sidebar_right_color_dark.html"
-																	class="dropdown-item rounded">Dark color</a></li>
-															<li><a href="sidebar_right_color_custom.html"
-																	class="dropdown-item rounded">Custom color</a></li>
-															<li><a href="sidebar_right_color_sections_custom.html"
-																	class="dropdown-item rounded">Custom sections
-																	color</a></li>
-														</ul>
-													</li>
-													<li class="dropdown-divider"></li>
-													<li><a href="sidebar_components.html"
-															class="dropdown-item rounded">Sidebar components</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="#" class="dropdown-item rounded"><i class="icon-sort"></i>
-													Vertical navigation</a>
-												<ul class="list-unstyled">
-													<li><a href="navigation_vertical_collapsible.html"
-															class="dropdown-item rounded">Collapsible menu</a></li>
-													<li><a href="navigation_vertical_accordion.html"
-															class="dropdown-item rounded">Accordion menu</a></li>
-													<li><a href="navigation_vertical_bordered.html"
-															class="dropdown-item rounded">Bordered navigation</a></li>
-													<li><a href="navigation_vertical_right_icons.html"
-															class="dropdown-item rounded">Right icons</a></li>
-													<li><a href="navigation_vertical_badges.html"
-															class="dropdown-item rounded">Badges</a></li>
-													<li><a href="navigation_vertical_disabled.html"
-															class="dropdown-item rounded">Disabled items</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="navigation_horizontal_mega.html"
-													class="dropdown-item font-weight-semibold rounded">
-													<i class="icon-grid52 text-indigo-400"></i>
-													<span class="text-indigo-400">Mega menu component</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<!-- <i class="icon-strategy mr-2"></i> -->
-						Offers and Campaign
-					</a>
-
-					<div class="dropdown-menu">
-						<div class="dropdown-header">Offers</div>
-						<div class="dropdown-submenu">
-							<a href="#" class="dropdown-item dropdown-toggle"><i class="icon-grid2"></i> Basic Offers</a>
-							<div class="dropdown-menu">
-								<a href="../seed/sidebar_none.html" class="dropdown-item">No sidebar</a>
-								<a href="../seed/sidebar_main.html" class="dropdown-item">1 sidebar</a>
-								<div class="dropdown-submenu">
-									<a href="#" class="dropdown-item dropdown-toggle">2 sidebars</a>
-									<div class="dropdown-menu">
-										<a href="../seed/sidebar_secondary.html" class="dropdown-item">Secondary
-											sidebar</a>
-										<a href="../seed/sidebar_right.html" class="dropdown-item">Right sidebar</a>
-									</div>
-								</div>
-								<div class="dropdown-submenu">
-									<a href="#" class="dropdown-item dropdown-toggle">3 sidebars</a>
-									<div class="dropdown-menu">
-										<a href="../seed/sidebar_right_hidden.html" class="dropdown-item">Right sidebar
-											hidden</a>
-										<a href="../seed/sidebar_right_visible.html" class="dropdown-item">Right sidebar
-											visible</a>
-									</div>
-								</div>
-								<a href="../seed/sidebar_sections.html" class="dropdown-item">Sectioned sidebar</a>
-								<a href="../seed/sidebar_stretched.html" class="dropdown-item">Stretched sidebar</a>
-							</div>
-						</div>
-						<div class="dropdown-submenu">
-							<a href="#" class="dropdown-item dropdown-toggle"><i class="icon-paragraph-justify3"></i>
-								Special Offers</a>
-							<div class="dropdown-menu">
-								<a href="../seed/navbar_main_fixed.html" class="dropdown-item">Main navbar fixed</a>
-								<a href="../seed/navbar_main_hideable.html" class="dropdown-item">Main navbar
-									hideable</a>
-								<a href="../seed/navbar_secondary_sticky.html" class="dropdown-item">Secondary navbar
-									sticky</a>
-								<a href="../seed/navbar_both_fixed.html" class="dropdown-item">Both navbars fixed</a>
-							</div>
-						</div>
-						<div class="dropdown-header">Campaign</div>
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Monthly Campaign</a>
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Yearly Campaign</a>
-					</div>
-				</li>
-
-				<li class="nav-item">
-					<a href="#" class="navbar-nav-link">
-						<!-- <i class="icon-make-group mr-2"></i> -->
-						Rewards
-					</a>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<!-- <i class="icon-strategy mr-2"></i> -->
-						Support
-					</a>
-
-					<div class="dropdown-menu">
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Shipping and Delivery</a>
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Order</a>
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Payments</a>
-						<a href="../seed/layout_boxed.html" class="dropdown-item"><i
-								class="icon-align-center-horizontal"></i> Returns and Refunds</a>
-					</div>
-				</li>
-			</ul>
-
-			<ul class="navbar-nav navbar-nav-highlight ml-md-auto">
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-make-group mr-2"></i>
-						Connect
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
-						<div class="dropdown-content-body p-2">
-							<div class="row no-gutters">
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-facebook2 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Facebook</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-twitter text-info-400 icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Twitter</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-4">
-									<a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-										<i class="icon-youtube text-danger icon-2x"></i>
-										<div class="font-size-sm font-weight-semibold text-uppercase mt-2">Youtube</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-cog3"></i>
-						<span class="d-md-none ml-2">Settings</span>
-					</a>
-
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-						<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-						<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!-- /secondary navbar -->
-
-
-	<!-- Page header -->
-	<div class="page-header navbar-light">
-		<div class="page-header-content header-elements-md-inline">
-			<div class="page-title d-flex">
-				<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Dashboard
-					<small class="font-size-base opacity-50">Good morning, Eugene</small>
-				</h4>
-				<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+		<!-- Main navbar -->
+		<div class="navbar navbar-expand-md navbar-dark bg-indigo py-2">
+			<div class="navbar-brand wmin-0 mr-5">
+				<a href="index.html" class="d-inline-block">
+					<!-- <img src="../assets/img/logo.png" alt=""> -->
+					<span style="color: #fff !important; font-size:medium;">KENAKATA
+						PROTIDIN</span>
+				</a>
 			</div>
 
-			<div class="header-elements d-none py-0 mb-3 mb-md-0">
-				<div class="breadcrumb">
-					<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-					<span class="breadcrumb-item active">Dashboard</span>
+			<div class="d-md-none">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbar-mobile">
+					<i class="icon-tree5"></i>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-mobile">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<form action="#">
+							<div class="form-group form-group-feedback form-group-feedback-right">
+								<input type="search"
+									class="form-control text-white border-bottom-1 wmin-md-200"
+									placeholder="Search">
+								<div class="form-control-feedback text-white">
+									<i class="icon-search4 font-size-sm"></i>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+
+				<span class="ml-md-3 mr-md-auto"> </span>
+
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown dropdown-user">
+						<a href="#"
+							class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+							data-toggle="dropdown">
+							<img src="../global_assets/images/placeholders/placeholder.jpg"
+								class="rounded-circle mr-2"
+								height="34" alt>
+							<span>Victoria</span>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My
+								profile</a>
+							<a href="#" class="dropdown-item"><i class="icon-coins"></i> My
+								balance</a>
+							<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i>
+								Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+							<div class="dropdown-divider"></div>
+							<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account
+								settings</a>
+							<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle caret-0"
+							data-toggle="dropdown">
+							<i class="icon-envelop2"></i>
+							<span class="d-md-none ml-2">Notifications</span>
+							<span class="badge textorange-400 ml-auto ml-md-0">16</span>
+						</a>
+
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+							<div class="dropdown-content-header">
+								<span class="font-weight-semibold">Latest activity</span>
+								<a href="#" class="text-default"><i
+										class="icon-search4 font-size-base"></i></a>
+							</div>
+
+							<div class="dropdown-content-body dropdown-scrollable">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-success-400 rounded-round btn-icon"><i
+													class="icon-mention"></i></a>
+										</div>
+
+										<div class="media-body">
+											<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS.
+											Tips and
+											tricks"
+											<div class="font-size-sm text-muted mt-1">4 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i
+													class="icon-paperplane"></i></a>
+										</div>
+
+										<div class="media-body">
+											Special offers have been sent to subscribed users by <a
+												href="#">Donna
+												Gordon</a>
+											<div class="font-size-sm text-muted mt-1">36 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-blue rounded-round btn-icon"><i
+													class="icon-plus3"></i></a>
+										</div>
+
+										<div class="media-body">
+											<a href="#">Chris Arney</a> created a new <span
+												class="font-weight-semibold">Design</span> branch in <span
+												class="font-weight-semibold">Limitless</span> repository
+											<div class="font-size-sm text-muted mt-1">2 hours ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i
+													class="icon-truck"></i></a>
+										</div>
+
+										<div class="media-body">
+											Shipping cost to the Netherlands has been reduced, database updated
+											<div class="font-size-sm text-muted mt-1">Feb 8, 11:30</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i
+													class="icon-comment"></i></a>
+										</div>
+
+										<div class="media-body">
+											New review received on <a href="#">Server side integration</a>
+											services
+											<div class="font-size-sm text-muted mt-1">Feb 2, 10:20</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i
+													class="icon-spinner11"></i></a>
+										</div>
+
+										<div class="media-body">
+											<strong>January, 2018</strong> - 1320 new users, 3284 orders, $49,390
+											revenue
+											<div class="font-size-sm text-muted mt-1">Feb 1, 05:46</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="dropdown-content-footer bg-light">
+								<a href="#" class="text-grey mr-auto">All activity</a>
+								<div>
+									<a href="#" class="text-grey" data-popup="tooltip"
+										title="Clear list"><i
+											class="icon-checkmark3"></i></a>
+									<a href="#" class="text-grey ml-2" data-popup="tooltip"
+										title="Settings"><i
+											class="icon-gear"></i></a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle caret-0"
+							data-toggle="dropdown">
+							<i class="icon-cart5"></i>
+							<span class="d-md-none ml-2">My Carts</span>
+							<span class="badge textorange-400 ml-auto ml-md-0">16</span>
+						</a>
+
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+							<div class="dropdown-content-header">
+								<span class="font-weight-semibold">Latest activity</span>
+								<a href="#" class="text-default"><i
+										class="icon-search4 font-size-base"></i></a>
+							</div>
+
+							<div class="dropdown-content-body dropdown-scrollable">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-success-400 rounded-round btn-icon"><i
+													class="icon-mention"></i></a>
+										</div>
+
+										<div class="media-body">
+											<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS.
+											Tips and
+											tricks"
+											<div class="font-size-sm text-muted mt-1">4 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i
+													class="icon-paperplane"></i></a>
+										</div>
+
+										<div class="media-body">
+											Special offers have been sent to subscribed users by <a
+												href="#">Donna
+												Gordon</a>
+											<div class="font-size-sm text-muted mt-1">36 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-blue rounded-round btn-icon"><i
+													class="icon-plus3"></i></a>
+										</div>
+
+										<div class="media-body">
+											<a href="#">Chris Arney</a> created a new <span
+												class="font-weight-semibold">Design</span> branch in <span
+												class="font-weight-semibold">Limitless</span> repository
+											<div class="font-size-sm text-muted mt-1">2 hours ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i
+													class="icon-truck"></i></a>
+										</div>
+
+										<div class="media-body">
+											Shipping cost to the Netherlands has been reduced, database updated
+											<div class="font-size-sm text-muted mt-1">Feb 8, 11:30</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i
+													class="icon-comment"></i></a>
+										</div>
+
+										<div class="media-body">
+											New review received on <a href="#">Server side integration</a>
+											services
+											<div class="font-size-sm text-muted mt-1">Feb 2, 10:20</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i
+													class="icon-spinner11"></i></a>
+										</div>
+
+										<div class="media-body">
+											<strong>January, 2018</strong> - 1320 new users, 3284 orders, $49,390
+											revenue
+											<div class="font-size-sm text-muted mt-1">Feb 1, 05:46</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="dropdown-content-footer bg-light">
+								<a href="#" class="text-grey mr-auto">All activity</a>
+								<div>
+									<a href="#" class="text-grey" data-popup="tooltip"
+										title="Clear list"><i
+											class="icon-checkmark3"></i></a>
+									<a href="#" class="text-grey ml-2" data-popup="tooltip"
+										title="Settings"><i
+											class="icon-gear"></i></a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							<img src="../global_assets/images/lang/gb.png" class="img-flag mr-2" alt>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="#" class="dropdown-item english"><img
+									src="../global_assets/images/lang/gb.png"
+									class="img-flag" alt> English</a>
+							<a href="#" class="dropdown-item ukrainian"><img
+									src="../global_assets/images/lang/ua.png"
+									class="img-flag" alt> Українська</a>
+							<a href="#" class="dropdown-item deutsch"><img
+									src="../global_assets/images/lang/de.png"
+									class="img-flag" alt> Deutsch</a>
+							<a href="#" class="dropdown-item espana"><img
+									src="../global_assets/images/lang/es.png"
+									class="img-flag" alt> España</a>
+							<a href="#" class="dropdown-item russian"><img
+									src="../global_assets/images/lang/ru.png"
+									class="img-flag" alt> Русский</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!-- /main navbar -->
+
+		<!-- Secondary navbar -->
+		<div class="navbar navbar-expand-md navbar-dark bg-indigo">
+			<div class="text-center d-md-none w-100">
+				<button type="button" class="navbar-toggler dropdown-toggle"
+					data-toggle="collapse"
+					data-target="#navbar-navigation">
+					<!-- <i class="icon-unfold mr-2"></i> -->
+					Main Menu
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse" id="navbar-navigation">
+				<ul class="navbar-nav navbar-nav-highlight">
+					<li class="nav-item">
+						<a href="index.html" class="navbar-nav-link active">
+							<!-- <i class="icon-home4 mr-2"></i> -->
+							Home
+						</a>
+					</li>
+
+					<li class="nav-item nav-item-levels mega-menu-full">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							<!-- <i class="icon-make-group mr-2"></i> -->
+							Products
+						</a>
+
+						<div class="dropdown-menu dropdown-content">
+							<div class="dropdown-content-body">
+								<div class="row">
+									<div class="col-md-3">
+										<div
+											class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
+											Category 1</div>
+										<div class="dropdown-divider mb-2"></div>
+										<div class="dropdown-item-group mb-3 mb-md-0">
+											<ul class="list-unstyled">
+												<li>
+													<a href="#" class="dropdown-item rounded"><i class="icon-copy"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="../../../../layout_1/LTR/material/full/index.html"
+																class="dropdown-item rounded">Default layout</a></li>
+														<li><a href="../../../../layout_2/LTR/material/full/index.html"
+																class="dropdown-item rounded">Layout 2</a></li>
+														<li><a href="../../../../layout_3/LTR/material/full/index.html"
+																class="dropdown-item rounded">Layout 3</a></li>
+														<li><a href="index.html"
+																class="dropdown-item active rounded">Layout
+																4</a></li>
+														<li><a href="../../../../layout_5/LTR/material/full/index.html"
+																class="dropdown-item rounded">Layout 5</a></li>
+														<li>
+															<a href="../../../../layout_6/LTR/material/full/index.html"
+																class="dropdown-item disabled rounded">
+																Layout 6
+																<span
+																	class="badge bg-transparent align-self-center ml-auto">Coming
+																	soon</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-color-sampler"></i> Sub Categorys</a>
+													<ul class="list-unstyled">
+														<li><a href="../../../LTR/default/full/index.html"
+																class="dropdown-item rounded">Default</a></li>
+														<li><a href="index.html"
+																class="dropdown-item active rounded">Material</a></li>
+														<li><a href="../../../LTR/dark/full/index.html"
+																class="dropdown-item rounded">Dark</a></li>
+														<li>
+															<a href="../../../LTR/clean/full/index.html"
+																class="dropdown-item disabled rounded">
+																Clean
+																<span
+																	class="badge bg-transparent align-self-center ml-auto">Coming
+																	soon</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="../../../RTL/material/full/index.html"
+														class="dropdown-item rounded">
+														<i class="icon-width"></i>
+														Sub Category
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div
+											class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
+											Category 2</div>
+										<div class="dropdown-divider mb-2"></div>
+										<div class="dropdown-item-group mb-3 mb-md-0">
+											<ul class="list-unstyled">
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-stack2"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="layout_navbar_fixed_main.html"
+																class="dropdown-item rounded">Fixed main navbar</a></li>
+														<li><a href="layout_navbar_sticky_secondary.html"
+																class="dropdown-item rounded">Sticky secondary navbar</a>
+														</li>
+														<li><a href="layout_navbar_hideable_main.html"
+																class="dropdown-item rounded">Hideable main navbar</a></li>
+														<li><a href="layout_navbar_hideable_secondary.html"
+																class="dropdown-item rounded">Hideable secondary navbar</a>
+														</li>
+														<li><a href="layout_footer_fixed.html"
+																class="dropdown-item rounded">Fixed footer</a></li>
+														<li><a href="layout_footer_hideable.html"
+																class="dropdown-item rounded">Hideable footer</a></li>
+														<li><a href="layout_without_header.html"
+																class="dropdown-item rounded">Without page header</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-page-break2"></i> Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="content_page_header.html"
+																class="dropdown-item rounded">Page header</a></li>
+														<li>
+															<a href="content_page_footer.html"
+																class="dropdown-item rounded disabled">
+																Page footer
+																<span
+																	class="badge bg-transparent align-self-center ml-auto">Coming
+																	soon</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-cube3"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="layout_boxed_default.html"
+																class="dropdown-item rounded">Boxed with default sidebar</a>
+														</li>
+														<li><a href="layout_boxed_mini.html"
+																class="dropdown-item rounded">Boxed with mini sidebar</a>
+														</li>
+														<li><a href="layout_boxed_full.html"
+																class="dropdown-item rounded">Boxed full width</a></li>
+														<li><a href="layout_boxed_content.html"
+																class="dropdown-item rounded">Boxed content</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div
+											class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
+											Category 3</div>
+										<div class="dropdown-divider mb-2"></div>
+										<div class="dropdown-item-group mb-3 mb-md-0">
+											<ul class="list-unstyled">
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-menu3"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#" class="dropdown-item rounded">Single navbar</a>
+															<ul class="list-unstyled">
+																<li><a href="navbar_single_top_static.html"
+																		class="dropdown-item rounded">Single top static</a>
+																</li>
+																<li><a href="navbar_single_top_fixed.html"
+																		class="dropdown-item rounded">Single top fixed</a>
+																</li>
+																<li><a href="navbar_single_bottom_static.html"
+																		class="dropdown-item rounded">Single bottom
+																		static</a></li>
+																<li><a href="navbar_single_bottom_fixed.html"
+																		class="dropdown-item rounded">Single bottom
+																		fixed</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="dropdown-item rounded">Multiple navbars</a>
+															<ul class="list-unstyled">
+																<li><a href="navbar_multiple_top_static.html"
+																		class="dropdown-item rounded">Multiple top
+																		static</a></li>
+																<li><a href="navbar_multiple_top_fixed.html"
+																		class="dropdown-item rounded">Multiple top fixed</a>
+																</li>
+																<li><a href="navbar_multiple_bottom_static.html"
+																		class="dropdown-item rounded">Multiple bottom
+																		static</a></li>
+																<li><a href="navbar_multiple_bottom_fixed.html"
+																		class="dropdown-item rounded">Multiple bottom
+																		fixed</a></li>
+																<li><a href="navbar_multiple_top_bottom.html"
+																		class="dropdown-item rounded">Multiple - top and
+																		bottom</a></li>
+																<li><a href="navbar_multiple_secondary_sticky.html"
+																		class="dropdown-item rounded">Multiple - secondary
+																		sticky</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="dropdown-item rounded">Content navbar</a>
+															<ul class="list-unstyled">
+																<li><a href="navbar_component_single.html"
+																		class="dropdown-item rounded">Single navbar</a></li>
+																<li><a href="navbar_component_multiple.html"
+																		class="dropdown-item rounded">Multiple navbars</a>
+																</li>
+															</ul>
+														</li>
+														<li class="dropdown-divider"></li>
+														<li><a href="navbar_colors.html"
+																class="dropdown-item rounded">Color
+																options</a></li>
+														<li><a href="navbar_sizes.html"
+																class="dropdown-item rounded">Sizing
+																options</a></li>
+														<li><a href="navbar_hideable.html"
+																class="dropdown-item rounded">Hide on scroll</a></li>
+														<li><a href="navbar_components.html"
+																class="dropdown-item rounded">Navbar components</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-transmission"></i> Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="navigation_horizontal_click.html"
+																class="dropdown-item rounded">Submenu on click</a></li>
+														<li><a href="navigation_horizontal_hover.html"
+																class="dropdown-item rounded">Submenu on hover</a></li>
+														<li><a href="navigation_horizontal_elements.html"
+																class="dropdown-item rounded">With custom elements</a></li>
+														<li><a href="navigation_horizontal_tabs.html"
+																class="dropdown-item rounded">Tabbed navigation</a></li>
+														<li><a href="navigation_horizontal_disabled.html"
+																class="dropdown-item rounded">Disabled navigation links</a>
+														</li>
+														<li><a href="navigation_horizontal_mega.html"
+																class="dropdown-item rounded">Horizontal mega menu</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-tree5"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="#" class="dropdown-item rounded"><i
+																	class="icon-IE"></i> Second level</a></li>
+														<li>
+															<a href="#" class="dropdown-item rounded"><i
+																	class="icon-firefox"></i> Second level with child</a>
+															<ul class="list-unstyled">
+																<li><a href="#" class="dropdown-item rounded"><i
+																			class="icon-android"></i> Third level</a></li>
+																<li>
+																	<a href="#" class="dropdown-item rounded"><i
+																			class="icon-apple2"></i> Third level with
+																		child</a>
+																	<ul class="list-unstyled">
+																		<li><a href="#" class="dropdown-item rounded"><i
+																					class="icon-html5"></i> Fourth level</a>
+																		</li>
+																		<li><a href="#" class="dropdown-item rounded"><i
+																					class="icon-css3"></i> Fourth level</a>
+																		</li>
+																	</ul>
+																</li>
+																<li><a href="#" class="dropdown-item rounded"><i
+																			class="icon-windows"></i> Third level</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="dropdown-item rounded"><i
+																	class="icon-chrome"></i> Second level</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div
+											class="font-size-sm line-height-sm font-weight-semibold text-uppercase mt-1">
+											Category 4</div>
+										<div class="dropdown-divider mb-2"></div>
+										<div class="dropdown-item-group mb-3 mb-md-0">
+											<ul class="list-unstyled">
+												<li>
+													<a href="#" class="dropdown-item rounded"><i
+															class="icon-indent-decrease2"></i> Sub Category</a>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#" class="dropdown-item rounded">Main sidebar</a>
+															<ul class="list-unstyled">
+																<li><a href="sidebar_default_collapse.html"
+																		class="dropdown-item rounded">Default
+																		collapsible</a></li>
+																<li><a href="sidebar_default_hide.html"
+																		class="dropdown-item rounded">Default hideable</a>
+																</li>
+																<li><a href="sidebar_default_hidden.html"
+																		class="dropdown-item rounded">Default hidden</a>
+																</li>
+																<li><a href="sidebar_mini_collapse.html"
+																		class="dropdown-item rounded">Mini collapsible</a>
+																</li>
+																<li><a href="sidebar_mini_hide.html"
+																		class="dropdown-item rounded">Mini hideable</a></li>
+																<li><a href="sidebar_mini_hidden.html"
+																		class="dropdown-item rounded">Mini hidden</a></li>
+																<li class="dropdown-divider"></li>
+																<li><a href="sidebar_default_sections.html"
+																		class="dropdown-item rounded">Sectioned sidebar</a>
+																</li>
+																<li><a href="sidebar_default_stretched.html"
+																		class="dropdown-item rounded">Stretched sidebar</a>
+																</li>
+																<li><a href="sidebar_default_color_dark.html"
+																		class="dropdown-item rounded">Dark color</a></li>
+																<li><a href="sidebar_default_color_custom.html"
+																		class="dropdown-item rounded">Custom color</a></li>
+																<li><a href="sidebar_default_color_sections_custom.html"
+																		class="dropdown-item rounded">Custom sections
+																		color</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="dropdown-item rounded">Secondary sidebar</a>
+															<ul class="list-unstyled">
+																<li><a href="sidebar_secondary_after.html"
+																		class="dropdown-item rounded">After default</a></li>
+																<li><a href="sidebar_secondary_before.html"
+																		class="dropdown-item rounded">Before default</a>
+																</li>
+																<li><a href="sidebar_secondary_hidden.html"
+																		class="dropdown-item rounded">Hidden by default</a>
+																</li>
+																<li class="dropdown-divider"></li>
+																<li><a href="sidebar_secondary_sections.html"
+																		class="dropdown-item rounded">Sectioned sidebar</a>
+																</li>
+																<li><a href="sidebar_secondary_stretched.html"
+																		class="dropdown-item rounded">Stretched sidebar</a>
+																</li>
+																<li><a href="sidebar_secondary_color_dark.html"
+																		class="dropdown-item rounded">Dark color</a></li>
+																<li><a href="sidebar_secondary_color_custom.html"
+																		class="dropdown-item rounded">Custom color</a></li>
+																<li><a href="sidebar_secondary_color_sections_custom.html"
+																		class="dropdown-item rounded">Custom sections
+																		color</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#" class="dropdown-item rounded">Right sidebar</a>
+															<ul class="list-unstyled">
+																<li><a href="sidebar_right_default_collapse.html"
+																		class="dropdown-item rounded">Show - collapse
+																		main</a></li>
+																<li><a href="sidebar_right_default_hide.html"
+																		class="dropdown-item rounded">Show - hide main</a>
+																</li>
+																<li><a href="sidebar_right_default_toggle.html"
+																		class="dropdown-item rounded">Show - fix default
+																		width</a></li>
+																<li><a href="sidebar_right_mini_toggle.html"
+																		class="dropdown-item rounded">Show - fix mini
+																		width</a></li>
+																<li><a href="sidebar_right_secondary_hide.html"
+																		class="dropdown-item rounded">Show - hide
+																		secondary</a></li>
+																<li><a href="sidebar_right_visible.html"
+																		class="dropdown-item rounded">Visible by default</a>
+																</li>
+																<li class="dropdown-divider"></li>
+																<li><a href="sidebar_right_sections.html"
+																		class="dropdown-item rounded">Sectioned sidebar</a>
+																</li>
+																<li><a href="sidebar_right_stretched.html"
+																		class="dropdown-item rounded">Stretched sidebar</a>
+																</li>
+																<li><a href="sidebar_right_color_dark.html"
+																		class="dropdown-item rounded">Dark color</a></li>
+																<li><a href="sidebar_right_color_custom.html"
+																		class="dropdown-item rounded">Custom color</a></li>
+																<li><a href="sidebar_right_color_sections_custom.html"
+																		class="dropdown-item rounded">Custom sections
+																		color</a></li>
+															</ul>
+														</li>
+														<li class="dropdown-divider"></li>
+														<li><a href="sidebar_components.html"
+																class="dropdown-item rounded">Sidebar components</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="dropdown-item rounded"><i class="icon-sort"></i>
+														Sub Category</a>
+													<ul class="list-unstyled">
+														<li><a href="navigation_vertical_collapsible.html"
+																class="dropdown-item rounded">Collapsible menu</a></li>
+														<li><a href="navigation_vertical_accordion.html"
+																class="dropdown-item rounded">Accordion menu</a></li>
+														<li><a href="navigation_vertical_bordered.html"
+																class="dropdown-item rounded">Bordered navigation</a></li>
+														<li><a href="navigation_vertical_right_icons.html"
+																class="dropdown-item rounded">Right icons</a></li>
+														<li><a href="navigation_vertical_badges.html"
+																class="dropdown-item rounded">Badges</a></li>
+														<li><a href="navigation_vertical_disabled.html"
+																class="dropdown-item rounded">Disabled items</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="navigation_horizontal_mega.html"
+														class="dropdown-item font-weight-semibold rounded">
+														<i class="icon-grid52 text-indigo-400"></i>
+														<span class="text-indigo-400">Sub Category</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							<!-- <i class="icon-strategy mr-2"></i> -->
+							Offers and Campaign
+						</a>
+
+						<div class="dropdown-menu">
+							<div class="dropdown-header">Offers</div>
+							<div class="dropdown-submenu">
+								<a href="#" class="dropdown-item dropdown-toggle"><i
+										class="icon-grid2"></i> Basic
+									Offers</a>
+								<div class="dropdown-menu">
+									<a href="../seed/sidebar_none.html" class="dropdown-item">No
+										sidebar</a>
+									<a href="../seed/sidebar_main.html" class="dropdown-item">1 sidebar</a>
+									<div class="dropdown-submenu">
+										<a href="#" class="dropdown-item dropdown-toggle">2 sidebars</a>
+										<div class="dropdown-menu">
+											<a href="../seed/sidebar_secondary.html"
+												class="dropdown-item">Secondary
+												sidebar</a>
+											<a href="../seed/sidebar_right.html" class="dropdown-item">Right
+												sidebar</a>
+										</div>
+									</div>
+									<div class="dropdown-submenu">
+										<a href="#" class="dropdown-item dropdown-toggle">3 sidebars</a>
+										<div class="dropdown-menu">
+											<a href="../seed/sidebar_right_hidden.html"
+												class="dropdown-item">Right sidebar
+												hidden</a>
+											<a href="../seed/sidebar_right_visible.html"
+												class="dropdown-item">Right sidebar
+												visible</a>
+										</div>
+									</div>
+									<a href="../seed/sidebar_sections.html" class="dropdown-item">Sectioned
+										sidebar</a>
+									<a href="../seed/sidebar_stretched.html"
+										class="dropdown-item">Stretched sidebar</a>
+								</div>
+							</div>
+							<div class="dropdown-submenu">
+								<a href="#" class="dropdown-item dropdown-toggle"><i
+										class="icon-paragraph-justify3"></i>
+									Special Offers</a>
+								<div class="dropdown-menu">
+									<a href="../seed/navbar_main_fixed.html" class="dropdown-item">Main
+										navbar fixed</a>
+									<a href="../seed/navbar_main_hideable.html" class="dropdown-item">Main
+										navbar
+										hideable</a>
+									<a href="../seed/navbar_secondary_sticky.html"
+										class="dropdown-item">Secondary navbar
+										sticky</a>
+									<a href="../seed/navbar_both_fixed.html" class="dropdown-item">Both
+										navbars fixed</a>
+								</div>
+							</div>
+							<div class="dropdown-header">Campaign</div>
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Monthly Campaign</a>
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Yearly Campaign</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="navbar-nav-link">
+							<!-- <i class="icon-make-group mr-2"></i> -->
+							Rewards
+						</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							<!-- <i class="icon-strategy mr-2"></i> -->
+							Support
+						</a>
+
+						<div class="dropdown-menu">
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Shipping and Delivery</a>
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Order</a>
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Payments</a>
+							<a href="../seed/layout_boxed.html" class="dropdown-item"><i
+									class="icon-align-center-horizontal"></i> Returns and Refunds</a>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav navbar-nav-highlight ml-md-auto">
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							Social Platform
+						</a>
+
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+							<div class="dropdown-content-body p-2">
+								<div class="row no-gutters">
+									<div class="col-12 col-sm-4">
+										<a href="#"
+											class="d-block text-default text-center ripple-dark rounded p-3">
+											<i class="icon-facebook2 icon-2x"></i>
+											<div
+												class="font-size-sm font-weight-semibold text-uppercase mt-2">Facebook
+											</div>
+										</a>
+									</div>
+
+									<div class="col-12 col-sm-4">
+										<a href="#"
+											class="d-block text-default text-center ripple-dark rounded p-3">
+											<i class="icon-twitter text-info-400 icon-2x"></i>
+											<div
+												class="font-size-sm font-weight-semibold text-uppercase mt-2">Twitter</div>
+										</a>
+									</div>
+
+									<div class="col-12 col-sm-4">
+										<a href="#"
+											class="d-block text-default text-center ripple-dark rounded p-3">
+											<i class="icon-youtube text-danger icon-2x"></i>
+											<div
+												class="font-size-sm font-weight-semibold text-uppercase mt-2">Youtube</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="navbar-nav-link dropdown-toggle"
+							data-toggle="dropdown">
+							<i class="icon-cog3"></i>
+							<span class="d-md-none ml-2">Settings</span>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account
+								security</a>
+							<a href="#" class="dropdown-item"><i class="icon-statistics"></i>
+								Analytics</a>
+							<a href="#" class="dropdown-item"><i class="icon-accessibility"></i>
+								Accessibility</a>
+							<div class="dropdown-divider"></div>
+							<a href="#" class="dropdown-item"><i class="icon-gear"></i> All
+								settings</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /secondary navbar -->
+
+		<!-- Page header -->
+		<div class="page-header navbar-light">
+			<div class="page-header-content header-elements-md-inline">
+				<div class="page-title d-flex">
+					<h4><i class="icon-arrow-left52 mr-2"></i> <span
+							class="font-weight-semibold">Home</span> - Blank Page
+						<small class="font-size-base opacity-50">Good morning, Eugene</small>
+					</h4>
+					<a href="#" class="header-elements-toggle text-default d-md-none"><i
+							class="icon-more"></i></a>
+				</div>
+
+				<div class="header-elements d-none py-0 mb-3 mb-md-0">
+					<div class="breadcrumb">
+						<a href="index.html" class="breadcrumb-item"><i
+								class="icon-home2 mr-2"></i> Home</a>
+						<span class="breadcrumb-item active">Blank Page</span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- /page header -->
+		<!-- /page header -->
 
+		<!-- Page content -->
+		<div class="page-content pt-0">
 
-	<!-- Page content -->
-	<div class="page-content pt-0">
+			<!-- Main content -->
+			<div class="content-wrapper">
 
-		<!-- Main content -->
-		<div class="content-wrapper">
+				<!-- Content area -->
+				<div class="content">
 
-			<!-- Content area -->
-			<div class="content">
-
+				</div>
+				<!-- /content area -->
 
 			</div>
-			<!-- /content area -->
+			<!-- /main content -->
 
 		</div>
-		<!-- /main content -->
+		<!-- /page content -->
 
-	</div>
-	<!-- /page content -->
+		<!-- Footer -->
+		<div class="navbar navbar-expand-lg navbar-dark bg-indigo">
+			<div class="row py-4">
+				<div class="col-lg-4">
+					<span style="color: #fff; font-size: x-large;">KENAKATA PROTIDIN</span>
+					<p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Qui deleniti blanditiis,
+						voluptates delectus
+						tempora minus porro, corporis nulla, maiores impedit incidunt illo
+						reiciendis hic quibusdam.</p>
 
+					<div class="row py-3">
+						<div class="col-4">
+							<a href="#" class="d-block text-default ripple-dark rounded p-3">
+								<i class="icon-facebook2 text-light icon-2x"></i>
+							</a>
+						</div>
+						<div class="col-4">
+							<a href="#" class="d-block text-default ripple-dark rounded p-3">
+								<i class="icon-twitter text-light icon-2x"></i>
+							</a>
+						</div>
 
-	<!-- Footer -->
-	<div class="navbar navbar-expand-lg navbar-light">
-		<div class="text-center d-lg-none w-100">
-			<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
-				data-target="#navbar-footer">
-				<i class="icon-unfold mr-2"></i>
-				Footer
-			</button>
+						<div class="col-4">
+							<a href="#" class="d-block text-default ripple-dark rounded p-3">
+								<i class="icon-youtube text-light icon-2x"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<strong style="font-size: larger;">Stay Tuned</strong>
+							<p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Dolor impedit
+								molestias doloribus?</p>
+							<form action="#">
+								<div class="form-group form-group-feedback form-group-feedback-right">
+									<input type="search"
+										class="form-control text-white border-bottom-1 wmin-md-200"
+										placeholder="Enter Your Email">
+									<div class="form-control-feedback text-white">
+										<i class="icon-paperplane font-size-sm"></i>
+									</div>
+								</div>
+							</form>
+							<strong style="font-size: larger;">Leave Message</strong>
+							<p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Dolor impedit
+								molestias doloribus?</p>
+							<form action="#">
+								<div class="form-group form-group-feedback form-group-feedback-right">
+									<input type="search"
+										class="form-control text-white border-bottom-1 wmin-md-200"
+										placeholder="Leave Your Short Message">
+									<div class="form-control-feedback text-white">
+										<i class="icon-paperplane font-size-sm"></i>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-3">
+							<strong style="font-size: larger;">Short Navigation</strong>
+							<ul class="footer-cus-nav pt-2">
+								<li class="cus-nav-item"><a href="#">
+										<p>Home</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Products</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Offer and Campaign</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Rewards</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Support</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>About Us</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Our Team</p>
+									</a>
+								</li>
+								<li class="cus-nav-item"><a href="#">
+										<p>Shipping Info</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<strong style="font-size: larger;">Contact Us</strong>
+							<ul class="footer-cus-nav pt-2">
+								<li class="cus-nav-item">
+									<p><i class="icon-location4 font-size-sm"></i> Rajuk Rajib Cosmo
+										Shopping Complex,
+										Sector-7, Uttara, Dhaka-1230</p>
+								</li>
+								<li class="cus-nav-item">
+									<p><i class="icon-phone2 font-size-sm"></i> +880 1XXX XXX XXX</p>
+								</li>
+								<li class="cus-nav-item">
+									<p>Map</p>
+									<div class="google-map">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.582702126263!2d90.39741347516745!3d23.86894757858971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c55251220de1%3A0x252d0802e97850b3!2sPONDIT!5e0!3m2!1sen!2sbd!4v1711132790510!5m2!1sen!2sbd"
+											width="240" height="150" style="border: 2px solid #fff; padding: 5px;" allowfullscreen
+											loading="lazy"
+											referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="navbar navbar-expand-lg navbar-light">
+			<div class="text-center d-lg-none w-100">
+				<button type="button" class="navbar-toggler dropdown-toggle"
+					data-toggle="collapse"
+					data-target="#navbar-footer">
+					<!-- <i class="icon-unfold mr-2"></i> -->
+				</button>
+			</div>
 
-		<div class="navbar-collapse collapse" id="navbar-footer">
-			<span class="navbar-text">
-				&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a
-					href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
-			</span>
+			<div class="navbar-collapse collapse" id="navbar-footer">
+				<span class="navbar-text">
+					&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a
+						href="http://themeforest.net/user/Kopyov" target="_blank">Eugene
+						Kopyov</a>
+				</span>
 
-			<ul class="navbar-nav ml-lg-auto">
-				<li class="nav-item">
-					<span class="navbar-text ml-xl-auto">
-						<i class="icon-user-check mr-2"></i>
-						Signed in as <a href="#">Victoria Baker</a>
-					</span>
-				</li>
-			</ul>
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item">
+						<span class="navbar-text ml-xl-auto">
+							<i class="icon-user-check mr-2"></i>
+							Signed in as <a href="#">Victoria Baker</a>
+						</span>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- /footer -->
+		<!-- /footer -->
 
-</body>
+	</body>
 
 </html>
