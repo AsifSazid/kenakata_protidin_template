@@ -6,8 +6,17 @@
 .footer-cus-nav .cus-nav-item a{
     color: #f0f0f0;
 }
+
 .footer-cus-nav .cus-nav-item a:hover{
     color: #fff;
     font-weight: 700;
 }
 
+.navbar-text form{
+    display: inline-block;
+}
+
+.navbar-text form button{
+    background-color: transparent; 
+    border: 0px;
+}
